@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Cake_List-Swift.h>
 
 @interface CakeCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UIImageView *cakeImageView;
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *descriptionLabel;
+
+- (void)setupCell:(Cake *)cake;
 @end
